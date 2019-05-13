@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="4" parallel="tests">
+    <test name="SingleTestChrome">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="chrome"/>
+        <parameter name="base_url" value="http://stormy-beyond-9729.herokuapp.com/"/>
+        <classes>
+            <class name="boilerplateTests.Tests.testCase"/>
+        </classes>
+    </test>
+
+    <test name="SingleTestFirefox">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="firefox"/>
+        <parameter name="base_url" value="http://stormy-beyond-9729.herokuapp.com/"/>
+        <classes>
+            <class name="boilerplateTests.Tests.testCase"/>
+        </classes>
+    </test>
+
+    <test name="SingleTestSafari">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="safari"/>
+        <parameter name="base_url" value="http://stormy-beyond-9729.herokuapp.com/"/>
+        <classes>
+            <class name="boilerplateTests.Tests.testCase"/>
+        </classes>
+    </test>
+
+    <test name="SingleTestIE">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="ie"/>
+        <parameter name="base_url" value="http://stormy-beyond-9729.herokuapp.com/"/>
+        <classes>
+            <class name="boilerplateTests.Tests.testCase"/>
+        </classes>
+    </test>
+</suite>

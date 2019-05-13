@@ -1,0 +1,38 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "BROWSERSTACK_USERNAME",
+  "key": "BROWSERSTACK_ACCESS_KEY",
+
+  "capabilities": {
+    "build": "performance-browserstack",
+    "name": "parallel_test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome",
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser_version": "68"
+    },
+    "firefox": {
+      "browser": "firefox",
+      "os": "Windows",
+      "os_version": "10",
+      "browser_version": "61"
+    },
+    "safari": {
+      "browser": "safari",
+      "os": "OS X",
+      "os_version": "High Sierra",
+      "browser_version": "11"
+    },
+    "ie": {
+      "browser": "internet explorer",
+      "os": "Windows",
+      "os_version": "10",
+      "browser_version": "11"
+    }
+  }
+}
